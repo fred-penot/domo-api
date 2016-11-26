@@ -25,26 +25,26 @@ chmod -Rf 777 /var/www/html/domoapi
 # Suppresion des fichiers temporaires de DomoApi
 rm -Rf /var/www/html/domoapi/app/doc/*
 
-echo ''
-echo ''
-echo ''
-echo '###############################################################################'
-echo '##                                                                             '
-echo '##                   Bienvenue sur le container de Base ZS9                    '
-echo '##                                                                             '
-echo '##                                                                             '
-echo '##    * Page d accueil du serveur : http://172.17.0.2                          '
-echo '##                                                                             '
-echo '##    * Connexion SSH :                                                        '
-echo '##      - host => 172.17.0.2                                                   '
-echo '##      - login => ${login_ssh}                                                '
-echo '##      - password => ${password_ssh}                                          '
-echo '##                                                                             '
-echo '##    * Connexion MySQL :                                                      '
-echo '##      - login => root                                                        '
-echo '##      - password => ${password_mysql}                                        '
-echo '##                                                                             '
-echo '###############################################################################'
-echo ''
-echo ''
-echo ''
+echo ""
+echo ""
+echo ""
+echo "###############################################################################"
+echo "##                                                                             "
+echo "##                   Bienvenue sur le container de Base ZS9                    "
+echo "##                                                                             "
+echo "##                                                                             "
+echo "##    * Page d accueil du serveur : http://172.17.0.2                          "
+echo "##                                                                             "
+echo "##    * Connexion SSH :                                                        "
+echo "##      - host => 172.17.0.2                                                   "
+echo "##      - login => ${login_ssh}                                                "
+echo "##      - password => ${password_ssh}                                          "
+echo "##                                                                             "
+echo "##    * Connexion MySQL :                                                      "
+echo "##      - login => root                                                        "
+echo "##      - password => ${password_mysql}                                        "
+echo "##                                                                             "
+echo "###############################################################################"
+echo ""
+echo ""
+echo ""
