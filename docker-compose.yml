@@ -1,0 +1,7 @@
+app:
+  image: fwed/domo-api:gally
+  ports:
+    - 8999:80
+  volumes:
+    - /home/apps/workspace/docker/php/domoApi:/var/www/html/domoapi
+  tty: true
