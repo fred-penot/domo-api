@@ -12,7 +12,9 @@ ENV login_ssh="docker"
 # Installation des paquets
 RUN apt-get install -y -q git mediainfo
 
-# Telechargement et installation de DomoApi
+# copie des dump SQL
+COPY DomoApi.sql.zip /home/${login_ssh}/DomoApi.sql.zip
+COPY HomeOS.sql.zip /home/${login_ssh}/HomeOS.sql.zip
 COPY install.sh /root/install.sh
 RUN chmod -f 755 /root/install.sh
 RUN sh /root/install.sh
@@ -27,5 +29,4 @@ RUN rm -f /root/services.sh
 COPY services.sh /root/services.sh
 RUN chmod -f 755 /root/services.sh
 
-# Point de montage
-VOLUME ["/home/${login_ssh}", "/var/www/html/domoapi"]
+VOLUME ["/home/${login_ssh}","/var/www/html"]
